@@ -14,6 +14,7 @@
 		620FAECE286959B500D10200 /* TSA_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAECD286959B500D10200 /* TSA_TrackerTests.swift */; };
 		620FAED8286959B500D10200 /* TSA_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */; };
 		620FAEDA286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */; };
+		620FAEE828695D2700D10200 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEE728695D2700D10200 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		620FAED3286959B500D10200 /* TSA TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TSA TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITests.swift; sourceTree = "<group>"; };
 		620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TSA-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		620FAEE728695D2700D10200 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +77,16 @@
 		620FAEB0286959B400D10200 = {
 			isa = PBXGroup;
 			children = (
+				620FAEE728695D2700D10200 /* .gitignore */,
 				620FAEBB286959B400D10200 /* TSA Tracker */,
 				620FAECC286959B500D10200 /* TSA TrackerTests */,
 				620FAED6286959B500D10200 /* TSA TrackerUITests */,
 				620FAEBA286959B400D10200 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		620FAEBA286959B400D10200 /* Products */ = {
 			isa = PBXGroup;
@@ -94,6 +101,7 @@
 		620FAEBB286959B400D10200 /* TSA Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */,
 				620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */,
 				620FAEBE286959B400D10200 /* ContentView.swift */,
 				620FAEC0286959B500D10200 /* Assets.xcassets */,
@@ -232,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620FAEC4286959B500D10200 /* Preview Assets.xcassets in Resources */,
+				620FAEE828695D2700D10200 /* .gitignore in Resources */,
 				620FAEC1286959B500D10200 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +429,13 @@
 				DEVELOPMENT_TEAM = T2P953SZ6K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TSA-Tracker-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +460,13 @@
 				DEVELOPMENT_TEAM = T2P953SZ6K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TSA-Tracker-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

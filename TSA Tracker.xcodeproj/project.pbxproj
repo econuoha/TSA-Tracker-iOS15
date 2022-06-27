@@ -15,6 +15,12 @@
 		620FAED8286959B500D10200 /* TSA_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */; };
 		620FAEDA286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */; };
 		620FAEE828695D2700D10200 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEE728695D2700D10200 /* .gitignore */; };
+		620FAEEA28695F2200D10200 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEE928695F2200D10200 /* Launch Screen.storyboard */; };
+		620FAEEF2869629C00D10200 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEEE2869629C00D10200 /* OnboardingView.swift */; };
+		620FAEF1286962AA00D10200 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEF0286962AA00D10200 /* HomeView.swift */; };
+		620FAEF328696DB800D10200 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEF228696DB800D10200 /* AudioPlayer.swift */; };
+		620FAEF62869724D00D10200 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEF42869724D00D10200 /* chimeup.mp3 */; };
+		620FAEF72869724D00D10200 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEF52869724D00D10200 /* success.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +51,14 @@
 		620FAED3286959B500D10200 /* TSA TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TSA TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITests.swift; sourceTree = "<group>"; };
 		620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TSA-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TSA-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 		620FAEE728695D2700D10200 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		620FAEE928695F2200D10200 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		620FAEEE2869629C00D10200 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		620FAEF0286962AA00D10200 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		620FAEF228696DB800D10200 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		620FAEF42869724D00D10200 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		620FAEF52869724D00D10200 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				620FAEE728695D2700D10200 /* .gitignore */,
+				620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */,
 				620FAEBB286959B400D10200 /* TSA Tracker */,
 				620FAECC286959B500D10200 /* TSA TrackerTests */,
 				620FAED6286959B500D10200 /* TSA TrackerUITests */,
@@ -101,9 +114,10 @@
 		620FAEBB286959B400D10200 /* TSA Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				620FAEE628695B1C00D10200 /* TSA-Tracker-Info.plist */,
-				620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */,
-				620FAEBE286959B400D10200 /* ContentView.swift */,
+				620FAEF828697CD000D10200 /* Sounds */,
+				620FAEEB2869612300D10200 /* Models */,
+				620FAEEC2869612900D10200 /* Views */,
+				620FAEED2869612E00D10200 /* Controllers */,
 				620FAEC0286959B500D10200 /* Assets.xcassets */,
 				620FAEC2286959B500D10200 /* Preview Content */,
 			);
@@ -133,6 +147,42 @@
 				620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */,
 			);
 			path = "TSA TrackerUITests";
+			sourceTree = "<group>";
+		};
+		620FAEEB2869612300D10200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEF228696DB800D10200 /* AudioPlayer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		620FAEEC2869612900D10200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */,
+				620FAEBE286959B400D10200 /* ContentView.swift */,
+				620FAEE928695F2200D10200 /* Launch Screen.storyboard */,
+				620FAEEE2869629C00D10200 /* OnboardingView.swift */,
+				620FAEF0286962AA00D10200 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		620FAEED2869612E00D10200 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		620FAEF828697CD000D10200 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEF52869724D00D10200 /* success.m4a */,
+				620FAEF42869724D00D10200 /* chimeup.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +291,9 @@
 			files = (
 				620FAEC4286959B500D10200 /* Preview Assets.xcassets in Resources */,
 				620FAEE828695D2700D10200 /* .gitignore in Resources */,
+				620FAEEA28695F2200D10200 /* Launch Screen.storyboard in Resources */,
+				620FAEF62869724D00D10200 /* chimeup.mp3 in Resources */,
+				620FAEF72869724D00D10200 /* success.m4a in Resources */,
 				620FAEC1286959B500D10200 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620FAEEF2869629C00D10200 /* OnboardingView.swift in Sources */,
+				620FAEF1286962AA00D10200 /* HomeView.swift in Sources */,
+				620FAEF328696DB800D10200 /* AudioPlayer.swift in Sources */,
 				620FAEBF286959B400D10200 /* ContentView.swift in Sources */,
 				620FAEBD286959B400D10200 /* TSA_TrackerApp.swift in Sources */,
 			);
@@ -433,6 +489,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -464,6 +521,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620FAEBD286959B400D10200 /* TSA_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */; };
+		620FAEBF286959B400D10200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEBE286959B400D10200 /* ContentView.swift */; };
+		620FAEC1286959B500D10200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEC0286959B500D10200 /* Assets.xcassets */; };
+		620FAEC4286959B500D10200 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEC3286959B500D10200 /* Preview Assets.xcassets */; };
+		620FAECE286959B500D10200 /* TSA_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAECD286959B500D10200 /* TSA_TrackerTests.swift */; };
+		620FAED8286959B500D10200 /* TSA_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */; };
+		620FAEDA286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		620FAECA286959B500D10200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 620FAEB1286959B400D10200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 620FAEB8286959B400D10200;
+			remoteInfo = "TSA Tracker";
+		};
+		620FAED4286959B500D10200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 620FAEB1286959B400D10200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 620FAEB8286959B400D10200;
+			remoteInfo = "TSA Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		620FAEB9286959B400D10200 /* TSA Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TSA Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerApp.swift; sourceTree = "<group>"; };
+		620FAEBE286959B400D10200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		620FAEC0286959B500D10200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		620FAEC3286959B500D10200 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		620FAEC9286959B500D10200 /* TSA TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TSA TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620FAECD286959B500D10200 /* TSA_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerTests.swift; sourceTree = "<group>"; };
+		620FAED3286959B500D10200 /* TSA TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TSA TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITests.swift; sourceTree = "<group>"; };
+		620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSA_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		620FAEB6286959B400D10200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAEC6286959B500D10200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAED0286959B500D10200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620FAEB0286959B400D10200 = {
+			isa = PBXGroup;
+			children = (
+				620FAEBB286959B400D10200 /* TSA Tracker */,
+				620FAECC286959B500D10200 /* TSA TrackerTests */,
+				620FAED6286959B500D10200 /* TSA TrackerUITests */,
+				620FAEBA286959B400D10200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		620FAEBA286959B400D10200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEB9286959B400D10200 /* TSA Tracker.app */,
+				620FAEC9286959B500D10200 /* TSA TrackerTests.xctest */,
+				620FAED3286959B500D10200 /* TSA TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		620FAEBB286959B400D10200 /* TSA Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEBC286959B400D10200 /* TSA_TrackerApp.swift */,
+				620FAEBE286959B400D10200 /* ContentView.swift */,
+				620FAEC0286959B500D10200 /* Assets.xcassets */,
+				620FAEC2286959B500D10200 /* Preview Content */,
+			);
+			path = "TSA Tracker";
+			sourceTree = "<group>";
+		};
+		620FAEC2286959B500D10200 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				620FAEC3286959B500D10200 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		620FAECC286959B500D10200 /* TSA TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				620FAECD286959B500D10200 /* TSA_TrackerTests.swift */,
+			);
+			path = "TSA TrackerTests";
+			sourceTree = "<group>";
+		};
+		620FAED6286959B500D10200 /* TSA TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				620FAED7286959B500D10200 /* TSA_TrackerUITests.swift */,
+				620FAED9286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift */,
+			);
+			path = "TSA TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		620FAEB8286959B400D10200 /* TSA Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620FAEDD286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA Tracker" */;
+			buildPhases = (
+				620FAEB5286959B400D10200 /* Sources */,
+				620FAEB6286959B400D10200 /* Frameworks */,
+				620FAEB7286959B400D10200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TSA Tracker";
+			productName = "TSA Tracker";
+			productReference = 620FAEB9286959B400D10200 /* TSA Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		620FAEC8286959B500D10200 /* TSA TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620FAEE0286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA TrackerTests" */;
+			buildPhases = (
+				620FAEC5286959B500D10200 /* Sources */,
+				620FAEC6286959B500D10200 /* Frameworks */,
+				620FAEC7286959B500D10200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				620FAECB286959B500D10200 /* PBXTargetDependency */,
+			);
+			name = "TSA TrackerTests";
+			productName = "TSA TrackerTests";
+			productReference = 620FAEC9286959B500D10200 /* TSA TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		620FAED2286959B500D10200 /* TSA TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620FAEE3286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA TrackerUITests" */;
+			buildPhases = (
+				620FAECF286959B500D10200 /* Sources */,
+				620FAED0286959B500D10200 /* Frameworks */,
+				620FAED1286959B500D10200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				620FAED5286959B500D10200 /* PBXTargetDependency */,
+			);
+			name = "TSA TrackerUITests";
+			productName = "TSA TrackerUITests";
+			productReference = 620FAED3286959B500D10200 /* TSA TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		620FAEB1286959B400D10200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					620FAEB8286959B400D10200 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					620FAEC8286959B500D10200 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 620FAEB8286959B400D10200;
+					};
+					620FAED2286959B500D10200 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 620FAEB8286959B400D10200;
+					};
+				};
+			};
+			buildConfigurationList = 620FAEB4286959B400D10200 /* Build configuration list for PBXProject "TSA Tracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 620FAEB0286959B400D10200;
+			productRefGroup = 620FAEBA286959B400D10200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				620FAEB8286959B400D10200 /* TSA Tracker */,
+				620FAEC8286959B500D10200 /* TSA TrackerTests */,
+				620FAED2286959B500D10200 /* TSA TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		620FAEB7286959B400D10200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620FAEC4286959B500D10200 /* Preview Assets.xcassets in Resources */,
+				620FAEC1286959B500D10200 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAEC7286959B500D10200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAED1286959B500D10200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		620FAEB5286959B400D10200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620FAEBF286959B400D10200 /* ContentView.swift in Sources */,
+				620FAEBD286959B400D10200 /* TSA_TrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAEC5286959B500D10200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620FAECE286959B500D10200 /* TSA_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620FAECF286959B500D10200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620FAEDA286959B500D10200 /* TSA_TrackerUITestsLaunchTests.swift in Sources */,
+				620FAED8286959B500D10200 /* TSA_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		620FAECB286959B500D10200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 620FAEB8286959B400D10200 /* TSA Tracker */;
+			targetProxy = 620FAECA286959B500D10200 /* PBXContainerItemProxy */;
+		};
+		620FAED5286959B500D10200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 620FAEB8286959B400D10200 /* TSA Tracker */;
+			targetProxy = 620FAED4286959B500D10200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		620FAEDB286959B500D10200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		620FAEDC286959B500D10200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		620FAEDE286959B500D10200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TSA Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620FAEDF286959B500D10200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TSA Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		620FAEE1286959B500D10200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSA Tracker.app/TSA Tracker";
+			};
+			name = Debug;
+		};
+		620FAEE2286959B500D10200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TSA Tracker.app/TSA Tracker";
+			};
+			name = Release;
+		};
+		620FAEE4286959B500D10200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TSA Tracker";
+			};
+			name = Debug;
+		};
+		620FAEE5286959B500D10200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T2P953SZ6K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.econuoha.TSA-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TSA Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		620FAEB4286959B400D10200 /* Build configuration list for PBXProject "TSA Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620FAEDB286959B500D10200 /* Debug */,
+				620FAEDC286959B500D10200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620FAEDD286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620FAEDE286959B500D10200 /* Debug */,
+				620FAEDF286959B500D10200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620FAEE0286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620FAEE1286959B500D10200 /* Debug */,
+				620FAEE2286959B500D10200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620FAEE3286959B500D10200 /* Build configuration list for PBXNativeTarget "TSA TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620FAEE4286959B500D10200 /* Debug */,
+				620FAEE5286959B500D10200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 620FAEB1286959B400D10200 /* Project object */;
+}

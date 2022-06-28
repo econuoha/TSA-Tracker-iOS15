@@ -28,6 +28,9 @@
 #
 #########################
 
+.DetailViewListManager.swift
+.AirportListManager.swift
+
 #####
 # OS X temporary files that should never be committed
 #

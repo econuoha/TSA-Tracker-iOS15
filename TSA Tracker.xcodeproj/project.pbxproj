@@ -21,6 +21,11 @@
 		620FAEF328696DB800D10200 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAEF228696DB800D10200 /* AudioPlayer.swift */; };
 		620FAEF62869724D00D10200 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEF42869724D00D10200 /* chimeup.mp3 */; };
 		620FAEF72869724D00D10200 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 620FAEF52869724D00D10200 /* success.m4a */; };
+		620FAF04286A750F00D10200 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAF03286A750F00D10200 /* DetailView.swift */; };
+		620FAF06286A762300D10200 /* AirportListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAF05286A762300D10200 /* AirportListData.swift */; };
+		620FAF08286A776E00D10200 /* AirportListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAF07286A776E00D10200 /* AirportListManager.swift */; };
+		620FAF0A286A80E300D10200 /* DetailViewListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAF09286A80E300D10200 /* DetailViewListManager.swift */; };
+		620FAF0C286A810200D10200 /* DetailViewListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620FAF0B286A810200D10200 /* DetailViewListData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		620FAEF228696DB800D10200 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		620FAEF42869724D00D10200 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		620FAEF52869724D00D10200 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		620FAF03286A750F00D10200 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		620FAF05286A762300D10200 /* AirportListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListData.swift; sourceTree = "<group>"; };
+		620FAF07286A776E00D10200 /* AirportListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListManager.swift; sourceTree = "<group>"; };
+		620FAF09286A80E300D10200 /* DetailViewListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewListManager.swift; sourceTree = "<group>"; };
+		620FAF0B286A810200D10200 /* DetailViewListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewListData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				620FAEF228696DB800D10200 /* AudioPlayer.swift */,
+				620FAF05286A762300D10200 /* AirportListData.swift */,
+				620FAF07286A776E00D10200 /* AirportListManager.swift */,
+				620FAF09286A80E300D10200 /* DetailViewListManager.swift */,
+				620FAF0B286A810200D10200 /* DetailViewListData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +179,7 @@
 				620FAEE928695F2200D10200 /* Launch Screen.storyboard */,
 				620FAEEE2869629C00D10200 /* OnboardingView.swift */,
 				620FAEF0286962AA00D10200 /* HomeView.swift */,
+				620FAF03286A750F00D10200 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,10 +335,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				620FAEEF2869629C00D10200 /* OnboardingView.swift in Sources */,
+				620FAF04286A750F00D10200 /* DetailView.swift in Sources */,
 				620FAEF1286962AA00D10200 /* HomeView.swift in Sources */,
+				620FAF0A286A80E300D10200 /* DetailViewListManager.swift in Sources */,
+				620FAF08286A776E00D10200 /* AirportListManager.swift in Sources */,
+				620FAF0C286A810200D10200 /* DetailViewListData.swift in Sources */,
 				620FAEF328696DB800D10200 /* AudioPlayer.swift in Sources */,
 				620FAEBF286959B400D10200 /* ContentView.swift in Sources */,
 				620FAEBD286959B400D10200 /* TSA_TrackerApp.swift in Sources */,
+				620FAF06286A762300D10200 /* AirportListData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,14 +12,66 @@ struct HomeView: View {
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
     
     @State private var isAnimating: Bool = false
-
+    
+    @ObservedObject var airportListManager = AirportListManager()
+    
+    @State private var searchText = ""
+    
+    var filteredMessages: [ListItems] {
+        let forFilter = airportListManager.items
+        
+            if searchText.isEmpty {
+                return forFilter
+            } else {
+                return forFilter.filter { $0.code.localizedCaseInsensitiveContains(searchText) }
+            }
+        }
     //MARK: - Body
     var body: some View {
         ZStack{
+            Color("ColorRed")
+                .ignoresSafeArea()
             VStack{
                 //MARK: - Header
+                NavigationView{
+                    List(filteredMessages){item in
+                        NavigationLink(destination: DetailView( airportCode: item.code)) {
+                            HStack {
+                                Text(item.code)
+                                Text(item.name)
+                                Spacer()
+                                Image(item.image)
+                                    .resizable()
+                                    .frame(width: 20, height: 20, alignment: .trailing)
+                            }
+                            
+                        }
+                        .navigationTitle("Supported Airports")
+                        .frame(alignment: .center)
+                    }
+                }
+                
+                .navigationBarHidden(false)
+                .searchable(text: $searchText)
+                .autocapitalization(.allCharacters)
+                .disableAutocorrection(true)
+                .frame(alignment: .center)
+                .onAppear{
+                    airportListManager.fetchData()
+                    
+                    
+                }
+                .onDisappear{
+                    
+                }
+                
+                
                 Spacer()
+                
+                
                 //MARK: - Center
+                
+                
                 
                 //MARK: - Footer
                 Button(action: {
@@ -40,7 +92,7 @@ struct HomeView: View {
                 .controlSize(.large)
             }// : VStack
             .onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     isAnimating = true
                 }
             }

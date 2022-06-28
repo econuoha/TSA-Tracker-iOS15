@@ -57,9 +57,12 @@ struct OnboardingView: View {
                         .padding(.bottom)
                     Text("""
                          Green check mark indicates TSA precheck available.
+                         
+                         Wait times are estimates, subject to change, and may not be indicative of a traveler's experience.
                          Happy Tracking!
                          """)
                     .foregroundColor(.white)
+                    .padding(.horizontal)
                     .multilineTextAlignment(.center)
                     .font(.title3)
                     

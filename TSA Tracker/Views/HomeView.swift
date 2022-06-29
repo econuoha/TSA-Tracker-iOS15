@@ -52,7 +52,7 @@ struct HomeView: View {
                 }
                 
                 .navigationBarHidden(false)
-                .searchable(text: $searchText)
+                .searchable(text: $searchText,placement: .navigationBarDrawer(displayMode: .always), prompt: "Search By Airport Code")
                 .autocapitalization(.allCharacters)
                 .disableAutocorrection(true)
                 .frame(alignment: .center)
@@ -87,6 +87,7 @@ struct HomeView: View {
                         .font(.system(.title3, design: .rounded))
                         .fontWeight(.bold)
                 }//: Button
+                .padding(.top)
                 .buttonStyle(.borderedProminent)
                 .buttonBorderShape(.capsule)
                 .controlSize(.large)

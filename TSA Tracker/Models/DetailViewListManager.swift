@@ -28,7 +28,8 @@ class DetailViewListManager: ObservableObject{
                             let results = try decoder.decode(DetailViewListData.self, from: safeData)
                             DispatchQueue.main.async {
                                 self.items = results
-                                print(self.items)
+                                print (self.items.estimated_hourly_times!)
+                                
                             }
                         }
                         catch

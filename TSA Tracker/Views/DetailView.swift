@@ -15,67 +15,166 @@ struct DetailView: View {
     //MARK: - Body
     var body: some View {
         ZStack{
-            Color(.white)
+            Color("ColorBlue")
                 .ignoresSafeArea()
             VStack{
-                
-                HStack {
-                    Text(detailViewListManager.items.code)
-                        .fontWeight(.bold)
-                    Text(detailViewListManager.items.name)
-                    Image(detailViewListManager.items.image)
-                        .resizable()
-                        .frame(width: 20, height: 20, alignment: .center)
-                }
-                Spacer()
-                HStack {
-                    Image(systemName: "clock.badge.exclamationmark")
-                        .resizable()
-                        .frame(width: 50, height: 50, alignment: .center)
-                    Spacer()
-                    Text(detailViewListManager.items.rightnow_description)
-                        .fontWeight(.bold)
+                List{
+                    Section{
                         
-                }
-                .padding(.horizontal)
-                
-                Spacer()
-                
-                if let anyDelays = detailViewListManager.items.faa_alerts?.generalDelays{
-                    if let trend = anyDelays.trend{
-                        Text(trend)
-                            .font(.title3)
-                            .fontWeight(.bold)
-                    }
-                    if let reason = anyDelays.reason{
-                        Text(reason)
-                    }
-                }
-                else
-                {
+                        HStack {
+                            Spacer()
+                            Text(detailViewListManager.items.code)
+                                .fontWeight(.bold)
+                            Text(detailViewListManager.items.name)
+                                .font(.title3)
+                            Image(detailViewListManager.items.image)
+                                .resizable()
+                                .frame(width: 20, height: 20, alignment: .center)
+                            Spacer()
+                        }
+                        
+                    }//:Section
                     
-                    HStack {
-                        Image(systemName: "airplane.departure").resizable()
-                            .frame(width: 50, height: 50, alignment: .center)
-                        Spacer()
-                        Text("No Current Delays")
-                            .fontWeight(.bold)
+                    Section{
+                        HStack{
+                            Image(systemName: "clock.badge.exclamationmark")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .center)
+                            Spacer()
+                            Text(detailViewListManager.items.rightnow_description)
+                                .fontWeight(.bold)
+                        }
+                        .padding(.horizontal)
+                    }//:Section
+                    header: {
+                        Text("Current Wait Time")
                     }
-                    .padding(.horizontal)
-                }
-                Spacer()
+                    
+                    Section{
+                        if let anyDelays = detailViewListManager.items.faa_alerts?.general_delays{
+                            if let trend = anyDelays.trend, let reason = anyDelays.reason{
+                                if trend == ""{
+                                    HStack {
+                                        Image(systemName: "airplane").resizable()
+                                            .frame(width: 50, height: 50, alignment: .center)
+                                        Spacer()
+                                        Text("No General Delays")
+                                            .fontWeight(.bold)
+                                    }
+                                    .padding(.horizontal)
+                                }
+                                else
+                                {
+                                    HStack{
+                                        Text(trend)
+                                            .font(.title3)
+                                            .fontWeight(.bold)
+                                        Spacer()
+                                            Text(reason)
+                                    }
+                                }
+                            }
+                        }
+                    }//:Section
+                    header: {
+                        Text("FAA General Delay Alerts")
+                    }
+                    Section{
+                        if let anyDelays = detailViewListManager.items.faa_alerts?.ground_delays{
+                            if let trend = anyDelays.reason, let reason = anyDelays.average{
+                                if trend == ""{
+                                    HStack {
+                                        Image(systemName: "airplane.circle").resizable()
+                                            .frame(width: 50, height: 50, alignment: .center)
+                                        Spacer()
+                                        Text("No Ground Delays")
+                                            .fontWeight(.bold)
+                                    }
+                                    .padding(.horizontal)
+                                }
+                                else
+                                {
+                                    HStack{
+                                        Text(trend)
+                                            .font(.title3)
+                                            .fontWeight(.bold)
+                                        Spacer()
+                                            Text(reason)
+                                    }
+                                }
+                            }
+                        }
+                    }//:Section
+                    header: {
+                        Text("FAA Ground Delay Alerts")
+                    }
+                    
+                    Section{
+                        if let anyDelays = detailViewListManager.items.faa_alerts?.ground_stops{
+                            if let trend = anyDelays.reason, let reason = anyDelays.end_time{
+                                if trend == ""{
+                                    HStack {
+                                        Image(systemName: "airplane.circle.fill").resizable()
+                                            .frame(width: 50, height: 50, alignment: .center)
+                                        Spacer()
+                                        Text("No Ground Stops")
+                                            .fontWeight(.bold)
+                                    }
+                                    .padding(.horizontal)
+                                }
+                                else
+                                {
+                                    HStack{
+                                        Text(trend)
+                                            .font(.title3)
+                                            .fontWeight(.bold)
+                                        Spacer()
+                                            Text(reason)
+                                    }
+                                }
+                            }
+                        }
+                    }//:Section
+                    header: {
+                        Text("FAA General Stop Alerts")
+                    }
+                    
+                    
+                }//:List
+                .moveDisabled(true)
                 
-                List(detailViewListManager.items.estimated_hourly_times!){ item in
+                Section{
+                    if let estWaitTime = detailViewListManager.items.estimated_hourly_times{
+                        List{
+                            Section{
+                                ForEach(estWaitTime){ item in
+                                    HStack {
+                                        Text(item.timeslot)
+                                        Spacer()
+                                        if case let .mydouble(d) = item.waittime{
+                                            Text(String(d) + " minutes")
+                                        }
+                                        if case let .mystring(d) = item.waittime{
+                                            Text(String(d) + " minutes")
+                                        }
+                                    }//:Hstack
+                                    .padding(.horizontal)
+                                }//:ForEach
+                            }//:Section
+                        header:{
+                            Text("Estimated Wait Time by Hour")
+                                .frame(alignment: .center)
+                        }
+                            
+                        }
+                    }//:Section
+                }
+                
 
-                    HStack {
-                        Text(item.timeslot)
-                        Spacer()
-                        Text(String(describing: item.waittime))
-                    }
-                    .padding(.horizontal)
-                    
-                    
-                }
+                
+                
+
+
                 
                 
             }//: VStack

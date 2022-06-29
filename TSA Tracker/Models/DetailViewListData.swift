@@ -26,10 +26,28 @@ struct DetailViewListData: Decodable, Identifiable{
     var faa_alerts: FAAAlerts?
     var estimated_hourly_times: [EstimatedHourlyTimes]?
 }
+struct PreCheckCheckpoints: Codable{
+    
+}
+struct Values: Codable{
+    var terminalName: String
+}
 struct FAAAlerts: Codable{
 
-    let generalDelays: GeneralDelays?
-    
+    let general_delays: GeneralDelays
+    let ground_stops:GroundStops
+    let ground_delays: GroundDelays
+}
+struct GroundStops: Codable{
+
+    let reason: String?
+    let end_time: String?
+}
+
+struct GroundDelays: Codable{
+
+    let reason: String?
+    let average: String?
 }
 
 struct GeneralDelays: Codable{
@@ -43,6 +61,7 @@ struct EstimatedHourlyTimes: Decodable, Identifiable{
     var id: String{
         return timeslot
     }
+
     let timeslot: String
     let waittime: StringOrDouble
     
@@ -50,16 +69,16 @@ struct EstimatedHourlyTimes: Decodable, Identifiable{
 
 enum StringOrDouble: Decodable {
     
-    case string(String)
-    case double(Double)
+    case mystring(String)
+    case mydouble(Double)
     
     init(from decoder: Decoder) throws {
-        if let double = try? decoder.singleValueContainer().decode(Double.self) {
-            self = .double(double)
+        if let mydouble = try? decoder.singleValueContainer().decode(Double.self) {
+            self = .mydouble(mydouble)
             return
         }
-        if let string = try? decoder.singleValueContainer().decode(String.self) {
-            self = .string(string)
+        if let mystring = try? decoder.singleValueContainer().decode(String.self) {
+            self = .mystring(mystring)
             return
         }
         throw Error.couldNotFindStringOrDouble
@@ -68,3 +87,4 @@ enum StringOrDouble: Decodable {
         case couldNotFindStringOrDouble
     }
 }
+
